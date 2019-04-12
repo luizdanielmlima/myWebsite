@@ -39,7 +39,6 @@ h3 {
 ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0;
 }
 
 ul > li {
@@ -55,6 +54,10 @@ h2 {
 
 h2 {
   font-size: 2em;
+}
+
+h3 {
+  font-size: 1.3em;
 }
 
 /* NAV BAR------------------------------------------------*/
@@ -157,7 +160,7 @@ nav a:hover::before {
 main {
   height: 80vh;
   background-color: var(--bg-color);
-  padding: 0px 80px 25px 80px;
+  padding: 25px 80px 25px 80px;
 }
 
 a {
@@ -248,6 +251,7 @@ section {
 
 .section-title {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .btn-gotop {
@@ -257,7 +261,6 @@ section {
 }
 
 .abt-content {
-  padding: 40px;
   text-align: center;
 }
 
@@ -270,9 +273,14 @@ section {
 .aboutme .abt-content {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
-  /* grid-gap: 40px; */
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
   justify-items: center;
   line-height: 2.5;
+}
+
+.aboutme .abt-item {
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  margin-bottom: 40px;
 }
 
 .aboutme ul li {
@@ -297,23 +305,102 @@ section {
 }
 
 .portfolio .pf-content {
-  margin: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 60px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 80px;
 }
 
-.portfolio .img-thumb {
+/* START OF PORTFOLIO IMG AREA */
+.clickable-img {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.4s;
+}
+
+.clickable-img-raster {
   width: 100%;
 }
 
+.clickable-img-icon {
+  z-index: 100;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.clickable-img-icon-bg {
+  z-index: 50;
+  position: absolute;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.clickable-img:hover {
+  opacity: 0.7;
+}
+
+.clickable-img:hover .clickable-img-icon-bg {
+  opacity: 0.3;
+}
+
+.clickable-img:hover .clickable-img-icon {
+  opacity: 0.7;
+}
+
+/* END OF PORTFOLIO IMG AREA */
+
 .portfolio h3 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
 .portfolio .card {
   width: 100%;
-  /* background-color: var(--primary-color); */
+  color: var(--bg-color);
+  background-color: var(--dark-color);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio .card .card-body {
+  padding: 30px;
+}
+
+.portfolio .title-icons-area {
+  width: 100%;
+  margin: 0px 0 10px 0;
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+.portfolio .title-icons-area h3 {
+  margin-top: 5px;
+  flex: 2 1;
+}
+
+.portfolio i {
+  padding: 0 5px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.portfolio i:hover {
+  padding: 0 5px;
+  color: var(--bg-color);
 }
 
 .contact {
@@ -325,8 +412,16 @@ section {
 
 footer {
   height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--dark-color);
   color: var(--bg-color);
   text-align: center;
+  line-height: 2em;
   padding: 10px;
+}
+
+footer a {
+  color: var(--primary-color);
 }

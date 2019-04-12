@@ -68,9 +68,8 @@
       <h2 class="section-title">About Me</h2>
       <a class="btn-gotop" href="#home">go &#x25B2;</a>
       <div class="abt-content">
-        <div>
+        <div class="abt-item">
           <h3>Who I am</h3>
-          <br />
           <p>
             I´m a mechanical engineer who switched carreers many years ago. I
             consider myself a "life long learner", who loves programming, design
@@ -78,7 +77,7 @@
             and creativity.
           </p>
         </div>
-        <div>
+        <div class="abt-item">
           <h3>Some More Info</h3>
           <ul>
             <li>Happily married, father of a daughter</li>
@@ -88,7 +87,7 @@
             <li>Fluent English, learning French</li>
           </ul>
         </div>
-        <div>
+        <div class="abt-item">
           <h3>Skills I</h3>
           <div class="skills-icons">
             <i class="fab fa-js fa-3x"></i>
@@ -101,15 +100,8 @@
             <i class="fab fa-github fa-3x"></i>
             <i class="fab fa-gulp fa-3x"></i>
           </div>
-          <!-- <ul>
-            <li>Vanilla JS and Typescript</li>
-            <li>HTML, CSS, SaSS</li>
-            <li>Bootstrap 4</li>
-            <li>Angular 6+</li>
-            <li>Ionic 4</li>
-          </ul> -->
         </div>
-        <div>
+        <div class="abt-item">
           <h3>Skills II</h3>
           <ul>
             <li>Typescript</li>
@@ -126,98 +118,225 @@
       <a class="btn-gotop" href="#home">go &#x25B2;</a>
       <div class="pf-content">
         <div class="card">
-          <img
-            class="img-thumb"
-            src="./assets/portfolio_moztra.png"
-            alt="portfolio image"
-          />
-          <h3>Moztra</h3>
-          <i class="fab fa-github fa-2x"></i>
-          <i class="far fa-eye fa-2x"></i>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas
-            eaque ut neque debitis alias fuga libero, iusto quaerat eum.
-          </p>
+          <figure class="clickable-img">
+            <i class="far fa-eye fa-2x clickable-img-icon"></i>
+            <div class="clickable-img-icon-bg"></div>
+            <img
+              class="clickable-img-raster"
+              src="./assets/portfolio_moztra_crop.png"
+              alt="portfolio image"
+            />
+          </figure>
+          <div class="card-body">
+            <div class="title-icons-area">
+              <h3>Moztra</h3>
+              <!-- <i class="fab fa-github fa-2x"></i> -->
+              <i class="far fa-eye fa-2x"></i>
+            </div>
+            <p>
+              My most complete project, it´s built in Angular and uses
+              Components, Services, Routing, etc. For the back-end I used Google
+              Firebase. The code is commercial, so no Github...
+            </p>
+          </div>
         </div>
         <div class="card">
-          <img
-            class="img-thumb"
-            src="./assets/portf_movie_app.jpg"
-            alt="portfolio image"
-          />
-          <h3>Movie App</h3>
-          <i class="fab fa-github fa-2x"></i>
-          <i class="far fa-eye fa-2x"></i>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas
-            eaque ut neque debitis alias fuga libero, iusto quaerat eum.
-          </p>
+          <a
+            href="https://luizdanielmlima.github.io/myMovieApp/"
+            target="_blank"
+          >
+            <figure class="clickable-img">
+              <i class="far fa-eye fa-2x clickable-img-icon"></i>
+              <div class="clickable-img-icon-bg"></div>
+              <img
+                class="clickable-img-raster"
+                src="./assets/portf_movie_app_crop.jpg"
+                alt="portfolio image"
+              />
+            </figure>
+          </a>
+          <div class="card-body">
+            <div class="title-icons-area">
+              <h3>Movie App</h3>
+              <a
+                href="https://github.com/luizdanielmlima/myMovieApp"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+              <a
+                href="https://luizdanielmlima.github.io/myMovieApp/"
+                target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+            </div>
+            <p>
+              I made this to learn how to use the Movie DB API and Fetch to get
+              the data. I also learned some interesting CSS hover effects!
+            </p>
+          </div>
         </div>
         <div class="card">
-          <img
-            class="img-thumb"
-            src="./assets/portf_quiz.png"
-            alt="portfolio image"
-          />
-          <h3>Quiz</h3>
-          <i class="fab fa-github fa-2x"></i>
-          <i class="far fa-eye fa-2x"></i>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas
-            eaque ut neque debitis alias fuga libero, iusto quaerat eum.
-          </p>
+          <a
+            href="https://luizdanielmlima.github.io/simplequiz/"
+            target="_blank"
+          >
+            <figure class="clickable-img">
+              <i class="far fa-eye fa-2x clickable-img-icon"></i>
+              <div class="clickable-img-icon-bg"></div>
+              <img
+                class="clickable-img-raster"
+                src="./assets/portf_quiz_crop.png"
+                alt="portfolio image"
+              />
+            </figure>
+          </a>
+          <div class="card-body">
+            <div class="title-icons-area">
+              <h3>Quiz</h3>
+              <a
+                href="https://github.com/luizdanielmlima/simplequiz"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+              <a
+                href="https://luizdanielmlima.github.io/simplequiz/"
+                target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+            </div>
+            <p>
+              This was my first project using JS, HTML and CSS and some JQuery
+              (DOM manipulation). For the layout I used Bootstrap at first, but
+              replaced with CSS Grid.
+            </p>
+          </div>
         </div>
         <div class="card">
-          <img
-            class="img-thumb"
-            src="./assets/portf_color_picker.jpg"
-            alt="portfolio image"
-          />
-          <h3>Color Picker</h3>
-          <i class="fab fa-github fa-2x"></i>
-          <i class="far fa-eye fa-2x"></i>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas
-            eaque ut neque debitis alias fuga libero, iusto quaerat eum.
-          </p>
+          <a
+            href="https://luizdanielmlima.github.io/colorPicker/"
+            target="_blank"
+          >
+            <figure class="clickable-img">
+              <i class="far fa-eye fa-2x clickable-img-icon"></i>
+              <div class="clickable-img-icon-bg"></div>
+              <img
+                class="clickable-img-raster"
+                src="./assets/portf_color_picker_crop.jpg"
+                alt="portfolio image"
+              />
+            </figure>
+          </a>
+          <div class="card-body">
+            <div class="title-icons-area">
+              <h3>Color Picker</h3>
+              <a
+                href="https://github.com/luizdanielmlima/colorPicker"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+              <a
+                href="https://luizdanielmlima.github.io/colorPicker/"
+                target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+            </div>
+            <p>
+              A simple color picker app that I made, to learn Sass, that
+              generates all the colors through mixins and stuff. Clipboard.js
+              and Animate CSS were used too.
+            </p>
+          </div>
         </div>
         <div class="card">
-          <img
-            class="img-thumb"
-            src="./assets/portf_roman_number_conv.png"
-            alt="portfolio image"
-          />
-          <h3>Roman Number Converter</h3>
-          <i class="fab fa-github fa-2x"></i>
-          <i class="far fa-eye fa-2x"></i>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas
-            eaque ut neque debitis alias fuga libero, iusto quaerat eum.
-          </p>
+          <a
+            href="https://luizdanielmlima.github.io/roman-num-converter/"
+            target="_blank"
+          >
+            <figure class="clickable-img">
+              <i class="far fa-eye fa-2x clickable-img-icon"></i>
+              <div class="clickable-img-icon-bg"></div>
+              <img
+                class="clickable-img-raster"
+                src="./assets/portf_roman_number_conv_crop.png"
+                alt="portfolio image"
+              />
+            </figure>
+          </a>
+
+          <div class="card-body">
+            <div class="title-icons-area">
+              <h3>Roman Number Converter</h3>
+              <a
+                href="https://github.com/luizdanielmlima/roman-num-converter"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+              <a
+                href="https://luizdanielmlima.github.io/roman-num-converter/"
+                target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+            </div>
+            <p>
+              This was derived from an exercise from freecodecamp.org. I tried
+              to give it a good look and a robust layout with CSS Flex and Grid.
+            </p>
+          </div>
         </div>
         <div class="card">
-          <img
-            class="img-thumb"
-            src="./assets/portf_pathfinding.jpg"
-            alt="portfolio image"
-          />
-          <h3>Path Finding</h3>
-          <i class="fab fa-github fa-2x"></i>
-          <i class="far fa-eye fa-2x"></i>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas
-            eaque ut neque debitis alias fuga libero, iusto quaerat eum.
-          </p>
+          <a
+            href="https://luizdanielmlima.github.io/pathfindit/"
+            target="_blank"
+          >
+            <figure class="clickable-img">
+              <i class="far fa-eye fa-2x clickable-img-icon"></i>
+              <div class="clickable-img-icon-bg"></div>
+              <img
+                class="clickable-img-raster"
+                src="./assets/portf_pathfinding_crop.jpg"
+                alt="portfolio image"
+              />
+            </figure>
+          </a>
+
+          <div class="card-body">
+            <div class="title-icons-area">
+              <h3>Path Finding</h3>
+              <a
+                href="https://github.com/luizdanielmlima/pathfindit"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+              <a
+                href="https://luizdanielmlima.github.io/pathfindit/"
+                target="_blank"
+                ><i class="far fa-eye fa-2x"></i
+              ></a>
+            </div>
+            <p>
+              Quite a fun project, where I had the chance to learn Paper.js and
+              a path finding library. The "game terrain" can be randomized, give
+              it a try!
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section class="contact">
       <h2 class="section-title" id="contact">Contact</h2>
       <a class="btn-gotop" href="#home">go &#x25B2;</a>
-      <div></div>
+      <div>
+        <p>It´s always great to exchange ideas!</p>
+      </div>
     </section>
     <footer>
-      <p>This is the footer</p>
+      <p>Luiz Daniel Lima, 2019</p>
+      <p>
+        Thank you for visiting my page! Grab the code of this page at
+        <a href="https://github.com/luizdanielmlima/myWebsite" target="_blank"
+          >my Github.</a
+        >
+      </p>
     </footer>
   </body>
 </html>
