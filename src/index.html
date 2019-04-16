@@ -17,7 +17,11 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Luiz Daniel Lima´s Website</title>
   </head>
+
+  <!--  -->
+
   <body>
+    <!-- LOGO AND NAVBAR -->
     <header id="home">
       <div class="navbar">
         <div class="logo noselect">
@@ -25,7 +29,6 @@
           <p>D</p>
           <p>LIMA</p>
         </div>
-        <div class="spacer"></div>
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -36,6 +39,8 @@
         </nav>
       </div>
     </header>
+
+    <!-- COVER -->
     <main id="main">
       <div class="poster-b noselect">
         <div class="area-fullname">
@@ -64,6 +69,8 @@
         </div>
       </div>
     </main>
+
+    <!-- SECTION: ABOUT ME -->
     <section class="aboutme" id="about">
       <h2 class="section-title">About Me</h2>
       <a class="btn-gotop" href="#home">go &#x25B2;</a>
@@ -88,31 +95,35 @@
           </ul>
         </div>
         <div class="abt-item">
-          <h3>Skills I</h3>
-          <div class="skills-icons">
-            <i class="fab fa-js fa-3x"></i>
-            <i class="fab fa-html5 fa-3x"></i>
-            <i class="fab fa-css3-alt fa-3x"></i>
-            <i class="fab fa-angular fa-3x"></i>
-            <i class="fab fa-npm fa-3x"></i>
-            <i class="fab fa-bootstrap fa-3x"></i>
-            <i class="fab fa-git-square fa-3x"></i>
-            <i class="fab fa-github fa-3x"></i>
-            <i class="fab fa-gulp fa-3x"></i>
+          <h3>Skills</h3>
+          <div class="abt-item-doubleinfo">
+            <ul>
+              <li>JS/TS, HTML</li>
+              <li>CSS, SaSS</li>
+              <li>Angular 7, Ionic 4</li>
+              <li>Angular Material, Bootstrap 4</li>
+              <li>Firebase, NoSQL DB</li>
+              <!-- <li>npm, git, github</li> -->
+            </ul>
+            <div class="skills-icons">
+              <i class="fab fa-js fa-3x"></i>
+              <i class="fab fa-html5 fa-3x"></i>
+              <i class="fab fa-css3-alt fa-3x"></i>
+              <ion-icon name="logo-sass"></ion-icon>
+              <i class="fab fa-angular fa-3x"></i>
+              <ion-icon name="logo-ionic"></ion-icon>
+              <i class="fab fa-bootstrap fa-3x"></i>
+              <i class="fab fa-npm fa-3x"></i>
+              <!-- <i class="fab fa-git-square fa-3x"></i> -->
+              <i class="fab fa-github fa-3x"></i>
+              <!-- <i class="fab fa-gulp fa-3x"></i> -->
+            </div>
           </div>
-        </div>
-        <div class="abt-item">
-          <h3>Skills II</h3>
-          <ul>
-            <li>Typescript</li>
-            <li>SaSS</li>
-            <li>Ionic 4</li>
-            <li>Angular Material</li>
-            <li>Firebase</li>
-          </ul>
         </div>
       </div>
     </section>
+
+    <!-- SECTION: PORTFOLIO -->
     <section class="portfolio" id="portfolio">
       <h2 class="section-title">Portfolio</h2>
       <a class="btn-gotop" href="#home">go &#x25B2;</a>
@@ -136,7 +147,7 @@
             <p>
               My most complete project, it´s built in Angular and uses
               Components, Services, Routing, etc. For the back-end I used Google
-              Firebase. The code is commercial, so no Github...
+              Firebase. It is a commercial project, no Github avaiable.
             </p>
           </div>
         </div>
@@ -322,21 +333,30 @@
         </div>
       </div>
     </section>
+
+    <!-- SECTION: CONTACT -->
     <section class="contact">
       <h2 class="section-title" id="contact">Contact</h2>
       <a class="btn-gotop" href="#home">go &#x25B2;</a>
       <div>
-        <p>It´s always great to exchange ideas!</p>
+        <p>
+          Feel free to contact me at luizdml@gmail.com or take a look at my
+          Github.
+        </p>
       </div>
     </section>
+
+    <!-- FOOTER -->
     <footer>
       <p>Luiz Daniel Lima, 2019</p>
       <p>
-        Thank you for visiting my page! Grab the code of this page at
+        Thank you for visiting my page! Grab this page code at
         <a href="https://github.com/luizdanielmlima/myWebsite" target="_blank"
           >my Github.</a
         >
       </p>
     </footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
   </body>
 </html>
