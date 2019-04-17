@@ -1,15 +1,16 @@
 :root {
   --primary-color: #ed9a4a;
-  /* --secondary-color: #c20000; */
   --secondary-color: #bc252c;
   --tertiary-color: #e6af2e;
   --bg-color: #f4e1b7;
-  --dark-color: rgba(0, 0, 0, 0.85);
+  --dark-color: #1d1c1b;
+  --menu-height: 80px;
 }
 
 *,
 *::before,
-*::after {
+*::after,
+html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
@@ -67,7 +68,7 @@ h3 {
 /* menu BAR------------------------------------------------*/
 header {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   background: var(--dark-color);
   /* position: sticky;
   top: 0;
@@ -77,17 +78,18 @@ header {
 .menu-bar {
   margin: 0;
   width: 100%;
-  height: 80px;
-  /* padding: 10px 20px; */
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
+  height: var(--menu-height);
+  position: relative;
 }
 
 .myLogo {
   display: flex;
   align-items: center;
   /* border: 1px solid yellowgreen; */
+  position: absolute;
+  left: calc(var(--menu-height) / 5);
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .myLogo p {
@@ -110,6 +112,10 @@ header {
 }
 
 .menu-links {
+  position: absolute;
+  right: calc(var(--menu-height) / 5);
+  top: 50%;
+  transform: translate(0, -50%);
   display: flex;
   list-style: none;
   justify-content: space-around;
@@ -157,7 +163,18 @@ header {
 .menu-links a:hover::before {
   width: 100%;
 }
-/* END OF .menu-links-bar */
+
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  z-index: 2;
+  color: var(--bg-color);
+  display: none;
+}
+/* END OF MENU-BAR */
 
 main {
   height: 80vh;
@@ -175,7 +192,7 @@ a:hover {
 
 .poster-b {
   height: 100%;
-  width: 540px;
+  width: 550px;
   margin: 0 auto;
   display: grid;
   padding: 0;
@@ -187,6 +204,7 @@ a:hover {
 
 .area-fullname {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: end;
   padding: 0 20px;
@@ -241,7 +259,6 @@ a:hover {
 .habilities {
   list-style: none;
   padding: 20px;
-
   align-self: end;
   /* border-left: 5px solid var(--dark-color); */
 }
@@ -454,25 +471,102 @@ ion-icon {
   font-size: 48px;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .aboutme .skills-icons {
+    height: 200px;
+    margin: 10px 0px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /* border: 1px solid greenyellow; */
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .line {
-    width: 30px;
-    height: 3px;
-    background: white;
-    margin: 5px;
+  main {
+    height: 60vh;
+    background-color: var(--bg-color);
+    margin: 80px 40px 40px 10px;
+    padding: 0;
+  }
+
+  .poster-b {
+    height: auto;
+    width: 350px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-rows: auto auto;
+    /* border: solid 1px red; */
+    transform: rotate(0deg);
+  }
+
+  .name {
+    font-size: 3.5em;
+  }
+
+  .area-job {
+    padding: 5px 15px;
+    font-size: 1em;
+    color: var(--dark-color);
+  }
+
+  .myLogo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .menu-links {
-    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translate(-50%, 0);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    z-index: 9999;
   }
 
-  .hamburger {
+  .menu-links-ul {
+    display: none;
+    padding-top: 10px;
+    width: 100%;
+    background-color: var(--dark-color);
+  }
+
+  .menu-links ul li {
+    padding: 10px 0px;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .toggle {
+    display: inline-block;
     position: absolute;
     cursor: pointer;
-    right: 5%;
+    right: calc(var(--menu-height) / 5);
     top: 50%;
     transform: translate(-5%, -50%);
     z-index: 2;
+    color: var(--primary-color);
+  }
+
+  .toggle:hover {
+    color: var(--bg-color);
+  }
+
+  .active {
+    display: block;
   }
 
   .aboutme .abt-content {
@@ -483,5 +577,14 @@ ion-icon {
     /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
     justify-items: center;
     line-height: 2.5;
+  }
+
+  .aboutme .skills-icons {
+    height: 300px;
+    margin: 10px 0px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /* border: 1px solid greenyellow; */
   }
 }
