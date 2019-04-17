@@ -8,12 +8,21 @@
       href="https://fonts.googleapis.com/css?family=Raleway|Staatliches"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- my CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Luiz Daniel Lima´s Website</title>
   </head>
@@ -21,22 +30,27 @@
   <!--  -->
 
   <body>
-    <!-- LOGO AND NAVBAR -->
+    <!-- Logo AND nav-bar -->
     <header id="home">
-      <div class="navbar">
-        <div class="logo noselect">
+      <div class="menu-bar">
+        <div class="myLogo noselect">
           <p>L</p>
           <p>D</p>
           <p>LIMA</p>
         </div>
-        <nav>
+        <div class="menu-links">
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
 
@@ -78,10 +92,8 @@
         <div class="abt-item">
           <h3>Who I am</h3>
           <p>
-            I´m a mechanical engineer who switched carreers many years ago. I
-            consider myself a "life long learner", who loves programming, design
-            and... playing tennis. I enjoy solving problems through hard work
-            and creativity.
+            I´m an engineer who switched carreers many years ago. I
+            consider myself a "life long learner", who loves programming and design. I enjoy solving problems and building things with thoughtful planning, hard work and creativity.
           </p>
         </div>
         <div class="abt-item">
@@ -101,7 +113,7 @@
               <li>JS/TS, HTML</li>
               <li>CSS, SaSS</li>
               <li>Angular 7, Ionic 4</li>
-              <li>Angular Material, Bootstrap 4</li>
+              <li>Ang. Material, Bootstrap 4</li>
               <li>Firebase, NoSQL DB</li>
               <!-- <li>npm, git, github</li> -->
             </ul>
@@ -128,21 +140,26 @@
       <h2 class="section-title">Portfolio</h2>
       <a class="btn-gotop" href="#home">go &#x25B2;</a>
       <div class="pf-content">
-        <div class="card">
-          <figure class="clickable-img">
-            <i class="far fa-eye fa-2x clickable-img-icon"></i>
-            <div class="clickable-img-icon-bg"></div>
-            <img
-              class="clickable-img-raster"
-              src="./assets/portfolio_moztra_crop.png"
-              alt="portfolio image"
-            />
-          </figure>
-          <div class="card-body">
+        <div class="pf-card">
+          <a data-toggle="modal" data-target="#videoModal">
+            <figure class="clickable-img">
+              <i class="fab fa-youtube fa-2x clickable-img-icon"></i>
+              <!-- <i class="fa fa-play fa-2x clickable-img-icon"></i> -->
+              <div class="clickable-img-icon-bg"></div>
+              <img
+                class="clickable-img-raster"
+                src="./assets/portfolio_moztra_crop.png"
+                alt="portfolio image"
+              />
+            </figure>
+          </a>
+
+          <div class="pf-card-body">
             <div class="title-icons-area">
               <h3>Moztra</h3>
-              <!-- <i class="fab fa-github fa-2x"></i> -->
-              <i class="far fa-eye fa-2x"></i>
+              <a data-toggle="modal" data-target="#videoModal">
+                <i class="fab fa-youtube fa-2x"></i>
+              </a>
             </div>
             <p>
               My most complete project, it´s built in Angular and uses
@@ -151,13 +168,13 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="pf-card">
           <a
             href="https://luizdanielmlima.github.io/myMovieApp/"
             target="_blank"
           >
             <figure class="clickable-img">
-              <i class="far fa-eye fa-2x clickable-img-icon"></i>
+              <i class="far fa-eye  fa-2x clickable-img-icon"></i>
               <div class="clickable-img-icon-bg"></div>
               <img
                 class="clickable-img-raster"
@@ -166,7 +183,7 @@
               />
             </figure>
           </a>
-          <div class="card-body">
+          <div class="pf-card-body">
             <div class="title-icons-area">
               <h3>Movie App</h3>
               <a
@@ -186,7 +203,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="pf-card">
           <a
             href="https://luizdanielmlima.github.io/simplequiz/"
             target="_blank"
@@ -201,7 +218,7 @@
               />
             </figure>
           </a>
-          <div class="card-body">
+          <div class="pf-card-body">
             <div class="title-icons-area">
               <h3>Quiz</h3>
               <a
@@ -222,7 +239,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="pf-card">
           <a
             href="https://luizdanielmlima.github.io/colorPicker/"
             target="_blank"
@@ -237,7 +254,7 @@
               />
             </figure>
           </a>
-          <div class="card-body">
+          <div class="pf-card-body">
             <div class="title-icons-area">
               <h3>Color Picker</h3>
               <a
@@ -258,7 +275,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="pf-card">
           <a
             href="https://luizdanielmlima.github.io/roman-num-converter/"
             target="_blank"
@@ -274,7 +291,7 @@
             </figure>
           </a>
 
-          <div class="card-body">
+          <div class="pf-card-body">
             <div class="title-icons-area">
               <h3>Roman Number Converter</h3>
               <a
@@ -294,7 +311,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="pf-card">
           <a
             href="https://luizdanielmlima.github.io/pathfindit/"
             target="_blank"
@@ -310,7 +327,7 @@
             </figure>
           </a>
 
-          <div class="card-body">
+          <div class="pf-card-body">
             <div class="title-icons-area">
               <h3>Path Finding</h3>
               <a
@@ -340,8 +357,10 @@
       <a class="btn-gotop" href="#home">go &#x25B2;</a>
       <div>
         <p>
-          Feel free to contact me at luizdml@gmail.com or take a look at my
-          Github.
+          Feel free to contact me at luizdml@gmail.com or take a look at
+          <a href="https://github.com/luizdanielmlima/" target="_blank"
+            >my Github</a
+          >.
         </p>
       </div>
     </section>
@@ -350,13 +369,76 @@
     <footer>
       <p>Luiz Daniel Lima, 2019</p>
       <p>
-        Thank you for visiting my page! Grab this page code at
+        Thank you for visiting my page! Grab the code of this site at
         <a href="https://github.com/luizdanielmlima/myWebsite" target="_blank"
-          >my Github.</a
+          >Github.</a
         >
       </p>
     </footer>
 
+    <!-- MODAL -->
+    <div
+      class="video-modal modal fade"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Video</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/VSWYHQtCzmI"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/js/main.js"></script>
   </body>
 </html>
