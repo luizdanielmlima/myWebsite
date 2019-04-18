@@ -37,7 +37,7 @@ body {
 
 a,
 h3 {
-  color: var(--bg-color);
+  color: var(--primary-color);
 }
 
 ul {
@@ -265,7 +265,7 @@ a:hover {
 
 /* PAGES CONTENT */
 section {
-  padding: 60px;
+  padding: 60px 40px;
 }
 
 .section-title {
@@ -297,8 +297,10 @@ section {
 }
 
 .aboutme .abt-item-doubleinfo {
-  /* border: 1px solid rgba(255, 255, 255, 0.3); */
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  /* border: 1px solid palegreen; */
 }
 
 .aboutme ul li {
@@ -327,7 +329,7 @@ section {
 
 .portfolio .pf-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-gap: 80px;
 }
 
@@ -414,7 +416,6 @@ section {
 
 .portfolio .pf-card .pf-card-body {
   padding: 20px;
-  /* border: 1px solid greenyellow; */
 }
 
 .portfolio .title-icons-area {
@@ -425,7 +426,6 @@ section {
 }
 
 .portfolio .title-icons-area h3 {
-  /* margin-top: 4px; */
   flex: 2 1;
   /* border: 1px solid blueviolet; */
 }
@@ -444,27 +444,49 @@ section {
 /* SECTION: CONTACT */
 .contact {
   position: relative;
-  height: 30vh;
+  width: 100%;
   color: var(--bg-color);
   background-color: var(--secondary-color);
   text-align: center;
 }
 
+.contact-list {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  /* border: 1px solid palegreen; */
+}
+
+.contact-item {
+  padding: 10px 20px;
+}
+
+.contact-item i {
+  padding: 10px;
+}
+
+.contact-item a {
+  color: var(--bg-color);
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: var(--tertiary-color);
+}
+
 /* FOOTER */
 footer {
-  height: 15vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: var(--dark-color);
   color: var(--bg-color);
   text-align: center;
-  line-height: 2em;
-  padding: 50px;
+  padding: 20px;
 }
 
-footer a {
-  color: var(--primary-color);
+footer p {
+  display: block;
+  font-size: 0.8em;
 }
 
 ion-icon {
@@ -473,13 +495,11 @@ ion-icon {
 
 /* MEDIA QUERIES */
 @media (max-width: 1024px) {
-  .aboutme .skills-icons {
-    height: 200px;
-    margin: 10px 0px 0px 20px;
+  .aboutme .abt-item-doubleinfo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
-    /* border: 1px solid greenyellow; */
+    /* border: 1px solid palegreen; */
   }
 }
 
@@ -579,12 +599,9 @@ ion-icon {
     line-height: 2.5;
   }
 
-  .aboutme .skills-icons {
-    height: 300px;
-    margin: 10px 0px 0px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    /* border: 1px solid greenyellow; */
+  .contact-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 }
