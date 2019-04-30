@@ -113,7 +113,7 @@ header {
 
 .menu-links {
   position: absolute;
-  right: calc(var(--menu-height) / 5);
+  right: calc(var(--menu-height) / 2);
   top: 50%;
   transform: translate(0, -50%);
   display: flex;
@@ -269,6 +269,7 @@ section {
 }
 
 .section-title {
+  color: var(--bg-color);
   text-align: center;
   margin-bottom: 40px;
 }
@@ -296,6 +297,14 @@ section {
   line-height: 2.5;
 }
 
+.aboutme .abt-item h3 {
+  color: var(--bg-color);
+}
+
+.aboutme .linked-item {
+  color: var(--tertiary-color);
+}
+
 .aboutme .abt-item-doubleinfo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -321,6 +330,10 @@ section {
   position: relative;
   color: var(--dark-color);
   background-color: var(--bg-color);
+}
+
+.portfolio .section-title {
+  color: var(--dark-color);
 }
 
 .portfolio .btn-gotop {

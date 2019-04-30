@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.toggle-icon').click(function() {
+  $('.toggle').click(function() {
     console.log('menu icon clicked!');
     $('.menu-links-ul').toggleClass('active');
   });
