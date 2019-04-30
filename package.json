@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "myWebsite",
   "version": "1.0.0",
   "description": "My website files (2019)",
   "main": "index.js",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/luizdanielmlima/myWebsite/issues"
   },
-  "homepage": "https://github.com/luizdanielmlima/website"
+  "homepage": "https:/luizdanielmlima.github.io/myWebsite",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
