@@ -177,7 +177,7 @@ header {
 /* END OF MENU-BAR */
 
 main {
-  height: 75vh;
+  min-height: 680px;
   background-color: var(--bg-color);
   padding: 25px 80px 25px 80px;
 }
@@ -265,13 +265,14 @@ a:hover {
 
 /* PAGES CONTENT */
 section {
-  padding: 60px 40px;
+  padding: 40px 40px;
 }
 
 .section-title {
   color: var(--bg-color);
   text-align: center;
   margin-bottom: 40px;
+  /* border: 1px solid red; */
 }
 
 .btn-gotop {
@@ -283,7 +284,7 @@ section {
 /* SECTION: ABOUT ME */
 .aboutme {
   position: relative;
-  color: var(--primary-color);
+  color: var(--bg-color);
   background-color: var(--dark-color);
 }
 
@@ -297,12 +298,17 @@ section {
   line-height: 2.5;
 }
 
+.aboutme .section-title {
+  color: var(--primary-color);
+}
+
 .aboutme .abt-item h3 {
-  color: var(--bg-color);
+  margin-bottom: 20px;
+  color: var(--primary-color);
 }
 
 .aboutme .linked-item {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 .aboutme .abt-item-doubleinfo {

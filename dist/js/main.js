@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('.toggle').click(function() {
-    console.log('menu icon clicked!');
+    //console.log('menu icon clicked!');
     $('.menu-links-ul').toggleClass('active');
   });
 
