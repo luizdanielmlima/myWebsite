@@ -352,14 +352,34 @@ section {
   grid-gap: 80px;
 }
 
-.video-modal .modal-dialog {
-  min-width: 560px;
-  min-height: 315px;
+.video-modal {
+  /* padding-right: 0px !important; */
+  padding: 10px !important;
+  margin: 40px;
 }
 
 .video-modal .modal-body {
-  padding: 0;
-  background-color: black;
+  padding: 0px;
+}
+
+.video-modal .modal-title {
+  font-family: 'Raleway', sans-serif;
+}
+
+.video-modal .modal-dialog {
+  margin: 0;
+  padding: 0px;
+  max-width: 100vw;
+}
+
+.video-modal .modal-content {
+  padding: 0px;
+  text-align: center;
+}
+
+#modal-video-frame {
+  width: 100%;
+  height: 600px;
 }
 
 /* START OF PORTFOLIO IMG AREA */
@@ -603,7 +623,8 @@ ion-icon {
 
   /* MAIN AREA */
   main {
-    height: auto;
+    min-height: 65vh;
+    /* height: auto; */
     background-color: var(--bg-color);
     margin: 40px 0px 40px 0px;
     padding: 0;
@@ -668,5 +689,14 @@ ion-icon {
 
   form {
     width: 80vw;
+  }
+
+  .video-modal {
+    margin: 10px;
+  }
+
+  #modal-video-frame {
+    width: 100%;
+    max-height: 65vh;
   }
 }
