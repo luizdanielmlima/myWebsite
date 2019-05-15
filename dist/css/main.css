@@ -466,24 +466,38 @@ section {
   width: 100%;
   color: var(--bg-color);
   background-color: var(--secondary-color);
-  text-align: center;
 }
 
-.contact-list {
+.contact-info {
   padding: 0;
   display: flex;
   justify-content: center;
+  width: auto;
+}
+
+form {
+  width: 50vw;
+}
+
+.icons-list {
+  padding: 0;
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
   width: auto;
   text-align: center;
   /* border: 1px solid palegreen; */
 }
 
 .contact-item {
+  margin: 0;
   padding: 10px 20px;
+  /* border: 1px solid paleturquoise; */
 }
 
 .contact-item i {
-  padding: 10px;
+  padding: 0px;
 }
 
 .contact-item a {
@@ -494,6 +508,8 @@ section {
 .contact-item a:hover {
   color: var(--tertiary-color);
 }
+
+/* FORM */
 
 /* FOOTER */
 footer {
@@ -642,9 +658,15 @@ ion-icon {
   }
 
   /* CONTACT */
-  .contact-list {
+  .contact-info {
     padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: auto;
+  }
+
+  form {
+    width: 80vw;
   }
 }
