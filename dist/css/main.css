@@ -177,9 +177,9 @@ header {
 /* END OF MENU-BAR */
 
 main {
-  min-height: 680px;
+  /* min-height: 680px; */
   background-color: var(--bg-color);
-  padding: 25px 80px 25px 80px;
+  padding: 25px 80px 45px 80px;
 }
 
 a {
@@ -192,7 +192,7 @@ a:hover {
 
 .poster-b {
   height: auto;
-  width: 550px;
+  width: 500px;
   margin: 0 auto;
   display: grid;
   padding: 0;
@@ -549,21 +549,8 @@ ion-icon {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1024px) {
-  main {
-    background-color: var(--bg-color);
-    padding: 25px 80px 25px 80px;
-  }
 
-  .aboutme .abt-item-doubleinfo {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    /* border: 1px solid palegreen; */
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media (max-width: 920px) {
   /* HEADER */
   .myLogo {
     display: flex;
@@ -623,8 +610,6 @@ ion-icon {
 
   /* MAIN AREA */
   main {
-    min-height: 65vh;
-    /* height: auto; */
     background-color: var(--bg-color);
     margin: 40px 0px 40px 0px;
     padding: 0;
@@ -669,6 +654,16 @@ ion-icon {
     /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
     justify-items: center;
     line-height: 2.5;
+  }
+
+  .abt-item {
+    padding: 16px 8px;
+  }
+
+  .aboutme .abt-item-doubleinfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 
   /* PORTFOLIO */
