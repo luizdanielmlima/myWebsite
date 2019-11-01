@@ -42,10 +42,10 @@
         </div>
         <div class="menu-links">
           <ul class="menu-links-ul">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" id="nav-home">Home</a></li>
+            <li><a href="#about" id="nav-about">About Me</a></li>
+            <li><a href="#portfolio" id="nav-portfolio">Portfolio</a></li>
+            <li><a href="#contact" id="nav-contact">Contact</a></li>
             <li>
               <a
                 href="./assets/LuizDanielLima_FrontEndDev_CV-V01_eng.pdf"
@@ -71,7 +71,7 @@
     <!-- COVER -->
     <main id="main">
       <div class="poster-b noselect">
-        <div class="area-fullname">
+        <div class="area-fullname" data-obs="home">
           <h2 class="name">Luiz</h2>
           <h2 class="name">Daniel</h2>
           <h2 class="name">Lima</h2>
@@ -101,7 +101,7 @@
 
     <!-- SECTION: ABOUT ME -->
     <section class="aboutme" id="about">
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title" data-obs="about">About Me</h2>
       <a class="btn-gotop" href="#home">go&#x25B2;</a>
       <div class="abt-content">
         <div class="abt-item">
@@ -162,7 +162,7 @@
 
     <!-- SECTION: PORTFOLIO -->
     <section class="portfolio" id="portfolio">
-      <h2 class="section-title">Portfolio</h2>
+      <h2 class="section-title" data-obs="portfolio">Portfolio</h2>
       <a class="btn-gotop" href="#home">go&#x25B2;</a>
       <div class="pf-content">
         <div class="pf-card">
@@ -455,7 +455,7 @@
 
     <!-- SECTION: CONTACT -->
     <section class="contact">
-      <h2 class="section-title" id="contact">Contact</h2>
+      <h2 class="section-title" id="contact" data-obs="contact">Contact</h2>
       <a class="btn-gotop" href="#home">go &#x25B2;</a>
       <div class="contact-info">
         <div class="icons-list">

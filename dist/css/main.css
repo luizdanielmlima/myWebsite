@@ -70,9 +70,9 @@ header {
   margin: 0;
   padding: 0;
   background: var(--dark-color);
-  /* position: sticky;
+  position: sticky;
   top: 0;
-  z-index: 10; */
+  z-index: 10;
 }
 
 .menu-bar {
@@ -143,6 +143,10 @@ header {
   font-size: 1.5em;
 }
 
+.menu-highlight {
+  color: var(--bg-color) !important;
+}
+
 .menu-links a:hover {
   color: var(--bg-color);
 }
@@ -177,9 +181,12 @@ header {
 /* END OF MENU-BAR */
 
 main {
-  /* min-height: 680px; */
+  min-height: 90vh;
   background-color: var(--bg-color);
-  padding: 25px 80px 45px 80px;
+  /* padding: 25px 80px 45px 80px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -265,13 +272,13 @@ a:hover {
 
 /* PAGES CONTENT */
 section {
-  padding: 40px 40px;
+  padding: 80px 40px;
 }
 
 .section-title {
   color: var(--bg-color);
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   /* border: 1px solid red; */
 }
 
