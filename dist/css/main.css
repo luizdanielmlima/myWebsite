@@ -451,7 +451,8 @@ section {
   color: var(--bg-color);
   background-color: var(--dark-color);
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio .pf-card .pf-card-body {
@@ -461,13 +462,26 @@ section {
 .portfolio .title-icons-area {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 10px;
   /* border: 1px solid red; */
 }
 
 .portfolio .title-icons-area h3 {
-  flex: 2 1;
+  margin: 0;
+  margin-right: 4px;
   /* border: 1px solid blueviolet; */
+}
+
+.portfolio .title-icons-area .title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio .title-icons-area .title-wrapper p {
+  margin: 0 4px;
+  color: var(--primary-color);
+  padding: 0;
 }
 
 .portfolio i {

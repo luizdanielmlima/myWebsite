@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway|Staatliches"
@@ -44,7 +47,9 @@
           <ul class="menu-links-ul">
             <li><a href="#home" id="nav-home">Home</a></li>
             <li><a href="#about" id="nav-about">About Me</a></li>
-            <li><a href="#portfolio" id="nav-portfolio">Portfolio</a></li>
+            <li>
+              <a href="#portfolio" id="nav-portfolio">Portfolio</a>
+            </li>
             <li><a href="#contact" id="nav-contact">Contact</a></li>
             <li>
               <a
@@ -57,13 +62,16 @@
               <a
                 href="https://github.com/luizdanielmlima"
                 target="_blank"
-                ><i class="fab fa-github"></i></a
-              >
+                ><i class="fab fa-github"></i
+              ></a>
             </li>
           </ul>
         </div>
         <div class="toggle">
-          <i class="fa fa-bars fa-2x toggle-icon" aria-hidden="true"></i>
+          <i
+            class="fa fa-bars fa-2x toggle-icon"
+            aria-hidden="true"
+          ></i>
         </div>
       </div>
     </header>
@@ -106,19 +114,23 @@
         <div class="abt-item">
           <h3>Who I am</h3>
           <p>
-            I´m an engineer who switched carreers many years ago. I consider
-            myself a "life long learner", who loves programming and design. I
-            enjoy solving problems and building things with thoughtful planning,
-            hard work and creativity.
+            I´m an engineer who switched carreers many years ago. I
+            consider myself a "life long learner", who loves
+            programming and design. I enjoy solving problems and
+            building things with thoughtful planning, hard work and
+            creativity.
           </p>
         </div>
         <div class="abt-item">
           <h3>Some More Info</h3>
           <ul>
             <li>Happily married, father of a daughter</li>
-            <a class="linked-item"
-            href="https://luizdanielmlima.github.io/tennisballmachine/"
-            target="_blank"><li>Built my own tennis ball machine!</li></a>         
+            <a
+              class="linked-item"
+              href="https://luizdanielmlima.github.io/tennisballmachine/"
+              target="_blank"
+              ><li>Built my own tennis ball machine!</li></a
+            >
             <li>Founded a start-up 10 years ago</li>
             <a
               class="linked-item"
@@ -164,6 +176,48 @@
       <h2 class="section-title" data-obs="portfolio">Portfolio</h2>
       <div class="pf-content">
         <div class="pf-card">
+          <a href="https://movieviz.web.app/" target="_blank">
+            <figure class="clickable-img">
+              <i class="far fa-eye fa-2x clickable-img-icon"></i>
+              <div class="clickable-img-icon-bg"></div>
+              <img
+                class="clickable-img-raster"
+                src="./assets/portf_wemc_crop.jpg"
+                alt="wemc thumb"
+              />
+            </figure>
+          </a>
+          <div class="pf-card-body">
+            <div class="title-icons-area">
+              <div class="title-wrapper">
+                <h3>WEMC</h3>
+                <p>|</p>
+                <p>commercial</p>
+              </div>
+              <div class="icons">
+                <a
+                  href="https://c3s-edu.wemcouncil.org/"
+                  target="_blank"
+                  ><i class="far fa-eye fa-2x"></i
+                ></a>
+              </div>
+            </div>
+            <p>
+              An educational app to show climate changes, I helped
+              build this Angular 9 app as front-end developer at Nth
+              Work.
+            </p>
+            <p>
+              You can access the app
+              <a
+                href="https://c3s-edu.wemcouncil.org/"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+          </div>
+        </div>
+        <div class="pf-card">
           <a data-toggle="modal" data-target="#videoModal">
             <figure class="clickable-img">
               <i class="fab fa-youtube fa-2x clickable-img-icon"></i>
@@ -179,25 +233,28 @@
 
           <div class="pf-card-body">
             <div class="title-icons-area">
-              <h3>Moztra</h3>
-              <a data-toggle="modal" data-target="#videoModal">
-                <i class="fab fa-youtube fa-2x"></i>
-              </a>
+              <div class="title-wrapper">
+                <h3>Moztra</h3>
+                <p>|</p>
+                <p>commercial</p>
+              </div>
+              <div class="icons">
+                <a data-toggle="modal" data-target="#videoModal">
+                  <i class="fab fa-youtube fa-2x"></i>
+                </a>
+              </div>
             </div>
             <p>
-              My most complete project, it´s built in Angular7 and uses
-              Components, Services, Routing, etc. For the back-end I used Google
-              Firebase. It is a commercial project, no Github avaiable.
+              A CMS built in Angular 8 that uses Components, Services,
+              Routing, etc. For the back-end I used Google Firebase.
+              It is a commercial project, no Github avaiable.
             </p>
           </div>
         </div>
         <div class="pf-card">
-          <a
-            href="https://movieviz.web.app/"
-            target="_blank"
-          >
+          <a href="https://movieviz.web.app/" target="_blank">
             <figure class="clickable-img">
-              <i class="far fa-eye  fa-2x clickable-img-icon"></i>
+              <i class="far fa-eye fa-2x clickable-img-icon"></i>
               <div class="clickable-img-icon-bg"></div>
               <img
                 class="clickable-img-raster"
@@ -208,34 +265,41 @@
           </a>
           <div class="pf-card-body">
             <div class="title-icons-area">
-              <h3>Movie Viz</h3>
-              <a
-                href="https://github.com/luizdanielmlima/movieviz"
-                target="_blank"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-              <a
-                href="https://movieviz.web.app/"
-                target="_blank"
-                ><i class="far fa-eye fa-2x"></i
-              ></a>
+              <div class="title-wrapper">
+                <h3>Movie Viz</h3>
+                <p>|</p>
+                <p>side project</p>
+              </div>
+              <div class="icons">
+                <a
+                  href="https://github.com/luizdanielmlima/movieviz"
+                  target="_blank"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+                <a href="https://movieviz.web.app/" target="_blank"
+                  ><i class="far fa-eye fa-2x"></i
+                ></a>
+              </div>
             </div>
             <p>
-              An Ionic 4 app I developed, with data obtained through Movie DB API.
+              An Ionic4 / Angular8 app I developed, with data obtained
+              through Movie DB API.
             </p>
-            <p>The wireframes (UI design) were made in Adobe XD, check it out at <a
-              href="https://dribbble.com/luizdaniellima"
-              target="_blank"
-              >my Dribble</a>.</p>            
+            <p>
+              The wireframes (UI design) were made in Adobe XD, check
+              it out at
+              <a
+                href="https://dribbble.com/luizdaniellima"
+                target="_blank"
+                >my Dribble</a
+              >.
+            </p>
           </div>
         </div>
         <div class="pf-card">
-          <a
-            href="https://cooktub.web.app/"
-            target="_blank"
-          >
+          <a href="https://cooktub.web.app/" target="_blank">
             <figure class="clickable-img">
-              <i class="far fa-eye  fa-2x clickable-img-icon"></i>
+              <i class="far fa-eye fa-2x clickable-img-icon"></i>
               <div class="clickable-img-icon-bg"></div>
               <img
                 class="clickable-img-raster"
@@ -246,25 +310,35 @@
           </a>
           <div class="pf-card-body">
             <div class="title-icons-area">
-              <h3>Cooktub</h3>
-              <a
-                href="https://github.com/luizdanielmlima/cooktub"
-                target="_blank"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-              <a
-                href="https://cooktub.web.app/"
-                target="_blank"
-                ><i class="far fa-eye fa-2x"></i
-              ></a>
+              <div class="title-wrapper">
+                <h3>Cooktub</h3>
+                <p>|</p>
+                <p>side project</p>
+              </div>
+              <div class="icons">
+                <a
+                  href="https://github.com/luizdanielmlima/cooktub"
+                  target="_blank"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+                <a href="https://cooktub.web.app/" target="_blank"
+                  ><i class="far fa-eye fa-2x"></i
+                ></a>
+              </div>
             </div>
             <p>
-              An Ionic 4 app with some selected cooking channels, playlists and videos (data from Youtube´s API).
+              An Ionic4 / Angular8 app with some selected cooking
+              channels, playlists and videos (data from Youtube´s
+              API).
             </p>
-            <p>I showcased the UI concept and visual id at <a
-              href="https://dribbble.com/luizdaniellima"
-              target="_blank"
-              >my Dribble</a>.</p>            
+            <p>
+              I showcased the UI concept and visual id at
+              <a
+                href="https://dribbble.com/luizdaniellima"
+                target="_blank"
+                >my Dribble</a
+              >.
+            </p>
           </div>
         </div>
         <div class="pf-card">
@@ -284,22 +358,28 @@
           </a>
           <div class="pf-card-body">
             <div class="title-icons-area">
-              <h3>Quiz</h3>
-              <a
-                href="https://github.com/luizdanielmlima/simplequiz"
-                target="_blank"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-              <a
-                href="https://luizdanielmlima.github.io/simplequiz/"
-                target="_blank"
-                ><i class="far fa-eye fa-2x"></i
-              ></a>
+              <div class="title-wrapper">
+                <h3>Quiz</h3>
+                <p>|</p>
+                <p>side project</p>
+              </div>
+              <div class="icons">
+                <a
+                  href="https://github.com/luizdanielmlima/simplequiz"
+                  target="_blank"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+                <a
+                  href="https://luizdanielmlima.github.io/simplequiz/"
+                  target="_blank"
+                  ><i class="far fa-eye fa-2x"></i
+                ></a>
+              </div>
             </div>
             <p>
-                This was my first project using JS, HTML and CSS and some JQuery
-                (DOM manipulation). For the layout I used Bootstrap at first, but
-                replaced with CSS Grid.
+              This was my first project using JS, HTML and CSS and
+              some JQuery (DOM manipulation). For the layout I used
+              Bootstrap at first, but replaced with CSS Grid.
             </p>
           </div>
         </div>
@@ -320,22 +400,28 @@
           </a>
           <div class="pf-card-body">
             <div class="title-icons-area">
-              <h3>Trip to Patagonia</h3>
-              <a
-                href="https://github.com/luizdanielmlima/trip-patagonia"
-                target="_blank"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-              <a
-                href="https://luizdanielmlima.github.io/trip-patagonia/"
-                target="_blank"
-                ><i class="far fa-eye fa-2x"></i
-              ></a>
+              <div class="title-wrapper">
+                <h3>Trip to Patagonia</h3>
+                <p>|</p>
+                <p>side project</p>
+              </div>
+              <div class="icons">
+                <a
+                  href="https://github.com/luizdanielmlima/trip-patagonia"
+                  target="_blank"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+                <a
+                  href="https://luizdanielmlima.github.io/trip-patagonia/"
+                  target="_blank"
+                  ><i class="far fa-eye fa-2x"></i
+                ></a>
+              </div>
             </div>
             <p>
-                A website about my trip to Patagonia, in special the Map/Gallery
-                page, where I learned a lot about the Google Maps API, a nice way
-                to show the landscape.
+              A website about my trip to Patagonia, in special the
+              Map/Gallery page, where I learned a lot about the Google
+              Maps API, a nice way to show the landscape.
             </p>
           </div>
         </div>
@@ -356,61 +442,32 @@
           </a>
           <div class="pf-card-body">
             <div class="title-icons-area">
-              <h3>Color Picker</h3>
-              <a
-                href="https://github.com/luizdanielmlima/colorPicker"
-                target="_blank"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-              <a
-                href="https://luizdanielmlima.github.io/colorPicker/"
-                target="_blank"
-                ><i class="far fa-eye fa-2x"></i
-              ></a>
+              <div class="title-wrapper">
+                <h3>Color Picker</h3>
+                <p>|</p>
+                <p>side project</p>
+              </div>
+              <div class="icons">
+                <a
+                  href="https://github.com/luizdanielmlima/colorPicker"
+                  target="_blank"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+                <a
+                  href="https://luizdanielmlima.github.io/colorPicker/"
+                  target="_blank"
+                  ><i class="far fa-eye fa-2x"></i
+                ></a>
+              </div>
             </div>
             <p>
-                A simple color picker app that I made, to learn Sass, that
-                generates all the colors through mixins and stuff. Clipboard.js
-                and Animate CSS were used too.
+              A simple color picker app that I made, to learn Sass,
+              that generates all the colors through mixins and stuff.
+              Clipboard.js and Animate CSS were used too.
             </p>
           </div>
         </div>
-        <div class="pf-card">
-          <a
-            href="https://luizdanielmlima.github.io/roman-num-converter/"
-            target="_blank"
-          >
-            <figure class="clickable-img">
-              <i class="far fa-eye fa-2x clickable-img-icon"></i>
-              <div class="clickable-img-icon-bg"></div>
-              <img
-                class="clickable-img-raster"
-                src="./assets/portf_roman_number_conv_crop.png"
-                alt="portfolio image"
-              />
-            </figure>
-          </a>
 
-          <div class="pf-card-body">
-            <div class="title-icons-area">
-              <h3>Roman Number Converter</h3>
-              <a
-                href="https://github.com/luizdanielmlima/roman-num-converter"
-                target="_blank"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-              <a
-                href="https://luizdanielmlima.github.io/roman-num-converter/"
-                target="_blank"
-                ><i class="far fa-eye fa-2x"></i
-              ></a>
-            </div>
-            <p>
-                This was derived from an exercise from freecodecamp.org. I tried
-                to give it a good look and a robust layout with CSS Flex and Grid.
-            </p>
-          </div>
-        </div>
         <div class="pf-card">
           <a
             href="https://luizdanielmlima.github.io/pathfindit/"
@@ -429,22 +486,28 @@
 
           <div class="pf-card-body">
             <div class="title-icons-area">
-              <h3>Path Finding</h3>
-              <a
-                href="https://github.com/luizdanielmlima/pathfindit"
-                target="_blank"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-              <a
-                href="https://luizdanielmlima.github.io/pathfindit/"
-                target="_blank"
-                ><i class="far fa-eye fa-2x"></i
-              ></a>
+              <div class="title-wrapper">
+                <h3>Path Finding</h3>
+                <p>|</p>
+                <p>side project</p>
+              </div>
+              <div class="icons">
+                <a
+                  href="https://github.com/luizdanielmlima/pathfindit"
+                  target="_blank"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+                <a
+                  href="https://luizdanielmlima.github.io/pathfindit/"
+                  target="_blank"
+                  ><i class="far fa-eye fa-2x"></i
+                ></a>
+              </div>
             </div>
             <p>
-                Quite a fun project, where I had the chance to learn Paper.js and
-                a path finding library. The "game terrain" can be randomized, give
-                it a try!
+              Quite a fun project, where I had the chance to learn
+              Paper.js and a path finding library. The "game terrain"
+              can be randomized, give it a try!
             </p>
           </div>
         </div>
@@ -453,17 +516,25 @@
 
     <!-- SECTION: CONTACT -->
     <section class="contact">
-      <h2 class="section-title" id="contact" data-obs="contact">Contact</h2>
+      <h2 class="section-title" id="contact" data-obs="contact">
+        Contact
+      </h2>
       <div class="contact-info">
         <div class="icons-list">
           <div class="contact-item">
-            <a href="https://twitter.com/luizdaniellima" target="_blank">
+            <a
+              href="https://twitter.com/luizdaniellima"
+              target="_blank"
+            >
               <i class="fab fa-twitter fa-2x"></i>
               <p>@luizdaniellima</p>
             </a>
           </div>
           <div class="contact-item">
-            <a href="https://github.com/luizdanielmlima/" target="_blank">
+            <a
+              href="https://github.com/luizdanielmlima/"
+              target="_blank"
+            >
               <i class="fab fa-github fa-2x"></i>
               <p>luizdanielmlima</p>
             </a>
@@ -507,7 +578,9 @@
             ></textarea>
           </div>
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="submit" class="btn btn-primary">
+              Send
+            </button>
           </div>
         </form>
       </div>
@@ -515,10 +588,12 @@
 
     <!-- FOOTER -->
     <footer>
-      <p>Luiz Daniel Lima, 2019</p>
+      <p>Luiz Daniel Lima, 2020</p>
       <p>
-          Thank you for visiting my page! Grab the code of this site at
-        <a href="https://github.com/luizdanielmlima/myWebsite" target="_blank"
+        Thank you for visiting my page! Grab the code of this site at
+        <a
+          href="https://github.com/luizdanielmlima/myWebsite"
+          target="_blank"
           >my Github.</a
         >
       </p>
