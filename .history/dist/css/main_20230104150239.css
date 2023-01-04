@@ -288,6 +288,7 @@ section {
   position: relative;
   color: var(--dark-color);
   background-color: var(--secondary-color);
+  margin-right: 8px;
 }
 
 .whatido .section-title {
@@ -307,11 +308,25 @@ section {
   font-size: 18px;
   padding: 32px;
   color: var(--dark-color);
-  background-color: var(--bg-color);
-  box-shadow: 8px 8px 0 0;
+  background-color: var(--dark-color);
+  /* border: 2px solid var(--dark-color); */
 
   display: flex;
   align-items: center;
+}
+
+.ability::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  top: 8px;
+  left: 8px;
+}
+
+.ability p {
+  z-index: 100;
 }
 
 /* SECTION: ABOUT ME */

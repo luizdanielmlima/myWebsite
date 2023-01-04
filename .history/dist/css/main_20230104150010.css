@@ -287,7 +287,8 @@ section {
 .whatido {
   position: relative;
   color: var(--dark-color);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  margin-right: 8px;
 }
 
 .whatido .section-title {
@@ -308,10 +309,19 @@ section {
   padding: 32px;
   color: var(--dark-color);
   background-color: var(--bg-color);
-  box-shadow: 8px 8px 0 0;
+  /* border: 2px solid var(--dark-color); */
 
   display: flex;
   align-items: center;
+}
+
+.ability::before {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background-color: var(--dark-color);
+  top: 8px;
+  left: 8px;
 }
 
 /* SECTION: ABOUT ME */

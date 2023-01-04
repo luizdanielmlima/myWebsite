@@ -288,6 +288,7 @@ section {
   position: relative;
   color: var(--dark-color);
   background-color: var(--secondary-color);
+  margin-right: 8px;
 }
 
 .whatido .section-title {
@@ -312,6 +313,10 @@ section {
 
   display: flex;
   align-items: center;
+}
+
+.ability p {
+  z-index: 100;
 }
 
 /* SECTION: ABOUT ME */
