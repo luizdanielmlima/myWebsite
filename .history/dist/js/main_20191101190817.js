@@ -1,19 +1,16 @@
-$(document).ready(function () {
-  $('.toggle').click(function () {
+$(document).ready(function() {
+  $('.toggle').click(function() {
     //console.log('menu icon clicked!');
     $('.menu-links-ul').toggleClass('active');
   });
 
-  $('#videoModal').on('shown.bs.modal', function (e) {
+  $('#videoModal').on('shown.bs.modal', function(e) {
     //console.log('modal has appeared');
   });
 
-  $('#videoModal').on('hidden.bs.modal', function (e) {
+  $('#videoModal').on('hidden.bs.modal', function(e) {
     // console.log('modal has been closed');
-    $('#videoModal iframe').attr(
-      'src',
-      $('#videoModal iframe').attr('src'),
-    );
+    $('#videoModal iframe').attr('src', $('#videoModal iframe').attr('src'));
   });
 });
 
@@ -21,19 +18,19 @@ $(document).ready(function () {
 
 // DOM: array of the section titles
 const obsPageAreas = document.querySelectorAll('[data-obs]');
-const menuItems = ['home', , 'whatido', 'about', 'portfolio'];
+const menuItems = ['home', 'about', 'portfolio', 'contact'];
 let menuLabel = document.getElementById(`nav-home`);
 menuLabel.classList.toggle('menu-highlight');
 
 const config = {
   root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
   rootMargin: '0px',
-  threshold: 0.8,
+  threshold: 0.8
 };
 
 let isLeaving = false;
 
-setActiveMenuLabel = (item) => {
+setActiveMenuLabel = item => {
   cleanLabelsHighLight();
   menuLabel = document.getElementById(`nav-${item}`);
 
@@ -46,14 +43,14 @@ setActiveMenuLabel = (item) => {
 };
 
 cleanLabelsHighLight = () => {
-  menuItems.forEach((item) => {
+  menuItems.forEach(item => {
     const menu = document.getElementById(`nav-${item}`);
     menu.classList.remove('menu-highlight');
   });
 };
 
-let observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+let observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
     if (entry.isIntersecting) {
       // Do something with entering entry
       isLeaving = true;
@@ -69,7 +66,7 @@ let observer = new IntersectionObserver((entries) => {
 }, config);
 
 // Every main area will be observable for entering the viewport
-obsPageAreas.forEach((item) => {
+obsPageAreas.forEach(item => {
   observer.observe(item);
 });
 

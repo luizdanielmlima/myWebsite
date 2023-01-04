@@ -284,15 +284,11 @@ section {
 }
 
 /* SECTION: WHAT I CAN DO */
-.whatido {
+.whaticando {
   position: relative;
-  color: var(--dark-color);
-  background-color: var(--primary-color);
+  color: var(--bg-color);
+  background-color: var(--tertiary-color);
   margin-right: 8px;
-}
-
-.whatido .section-title {
-  color: var(--dark-color);
 }
 
 .abilities {
@@ -303,12 +299,12 @@ section {
 
 .ability {
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   padding: 32px;
-  color: var(--dark-color);
-  /* background-color: rgba(255, 255, 255, 0.3); */
-  border: 2px solid var(--dark-color);
+  color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+  border: 2px solid var(--bg-color);
 
   display: flex;
   align-items: center;

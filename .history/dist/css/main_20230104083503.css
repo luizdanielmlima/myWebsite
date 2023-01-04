@@ -3,7 +3,6 @@
   --secondary-color: #bc252c;
   --tertiary-color: #e6af2e;
   --bg-color: #f4e1b7;
-  --bg-dark-color: #302d2a;
   --dark-color: #1d1c1b;
   --menu-height: 80px;
 }
@@ -284,34 +283,22 @@ section {
 }
 
 /* SECTION: WHAT I CAN DO */
-.whatido {
+.whaticando {
   position: relative;
-  color: var(--dark-color);
-  background-color: var(--primary-color);
+  color: var(--bg-color);
+  background-color: var(--secondary-color);
   margin-right: 8px;
-}
-
-.whatido .section-title {
-  color: var(--dark-color);
 }
 
 .abilities {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 8px;
 }
 
 .ability {
-  text-align: center;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 32px;
-  color: var(--dark-color);
-  /* background-color: rgba(255, 255, 255, 0.3); */
-  border: 2px solid var(--dark-color);
-
-  display: flex;
-  align-items: center;
+  padding: 8px 12px;
+  background-color: var(--bg-color);
 }
 
 /* SECTION: ABOUT ME */

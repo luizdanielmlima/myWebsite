@@ -284,14 +284,14 @@ section {
 }
 
 /* SECTION: WHAT I CAN DO */
-.whatido {
+.whaticando {
   position: relative;
   color: var(--dark-color);
   background-color: var(--primary-color);
   margin-right: 8px;
 }
 
-.whatido .section-title {
+.whaticando .section-title {
   color: var(--dark-color);
 }
 

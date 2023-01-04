@@ -284,15 +284,15 @@ section {
 }
 
 /* SECTION: WHAT I CAN DO */
-.whatido {
+.whaticando {
   position: relative;
   color: var(--dark-color);
   background-color: var(--primary-color);
   margin-right: 8px;
 }
 
-.whatido .section-title {
-  color: var(--dark-color);
+.whaticando .section-title {
+  color: var(--primary-color);
 }
 
 .abilities {
@@ -303,7 +303,7 @@ section {
 
 .ability {
   text-align: center;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 18px;
   padding: 32px;
   color: var(--dark-color);
